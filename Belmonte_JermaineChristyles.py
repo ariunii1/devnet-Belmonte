@@ -5,8 +5,7 @@ Student: Jermaine Christyles A. Belmonte
 
 movies = []
 
-
-def display_menu():
+def display_menu(self):
     # print the menu
     print(" === Movie Collection Manager === ")
     print("1. Add a movie")
@@ -16,9 +15,8 @@ def display_menu():
     print("5. Exit")
 
     # return the user's choice
-    user_option = input("Choose an option: ")
-    return user_option
-
+    self.user_option = input("Choose an option: ")
+    return self.user_option
 
 
 def add_movie(movie_list):
@@ -62,3 +60,10 @@ def main():
 
 
 main()
+
+display_menu(display_menu)
+if display_menu.user_option == "1":
+    add_movie(add_movie)
+        
+elif display_menu.user_option == "2":
+    view_movies(view_movies)
